@@ -1,0 +1,146 @@
+.App{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montseratt', sans-serif;
+}
+
+.App {
+  background-image: url('./background/bg.jpg');
+	background-size:cover;
+  background-position: center;
+  transition: 0.4s ease-out; 
+}
+
+.App.warm {
+  background-image: url('./background/warm-bg.jpg');
+}
+.App.cold {
+  background-image: url('./background/cold-bg.jpg');
+}
+
+.heading{
+  font-weight: 1000;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin:auto auto;
+  color:whitesmoke;
+	width:50%;
+	text-align:center;
+	letter-spacing:4px;
+  text-shadow: 6px 3px rgba(9, 52, 245, 0.856);
+}
+
+main {
+  min-height: 100vh;
+  background-image:linear-gradient(to bottom,rgba(146, 140, 140, 0.2), rgba(0,0,0,0.75));
+  padding: 25px;
+}
+
+.search-box 
+{
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar
+{
+  display: block;
+  width: 50%;
+  padding: 15px;
+  margin: auto auto;
+  
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255,0.5);
+  border-radius: 35px 35px ;
+  margin-top: 50px;
+
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #f70909;
+  font-size: 20px;
+
+  transition: 0.4s ease-in-out;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: rgb(8, 34, 2);
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align:  centre;
+  margin-left: 100px;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 20x auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  top: 40px;
+  padding: 15px 65px ;
+
+  color: #FFF;
+  font-size: 70px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: centre;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  
+}
+
+.weather-box .weather {
+  position: relative;
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 60px ;
+  padding-left: 85px;
+  letter-spacing:2px;
+  text-shadow: 3px 3px rgba(236, 7, 7, 0.5);
+}
+.weather-info {
+  position: relative;
+  display: inline-block;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px ;
+  color:black;
+  
+  font-size: 20px;
+  font-weight: 900;
+  left: 870px;
+  top: -220px;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: centre;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
